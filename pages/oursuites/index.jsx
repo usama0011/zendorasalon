@@ -86,7 +86,7 @@ const Index = () => {
           </div>
           <div className={styles.beliefleft}></div>
           <div className={styles.beliefRight}>
-            <Image className={styles.image} src="/bone.png" alt="Payment Plan" fill />
+            <Image className={styles.image} src="https://res.cloudinary.com/dbbtqwy3w/image/upload/v1686393375/zendora/blonde-woman-getting-her-hair-done_hpxnqk.jpg" alt="Payment Plan" fill />
           </div>
         </div>
         <GallerySlider/>
