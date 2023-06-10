@@ -1,0 +1,116 @@
+.upperContainer {
+    width: 100%;
+    height: 186px;
+    position: relative;
+  }
+  .bgImageContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .bgImageContainer > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+  }
+  .ourprofessionalContainer {
+    position: absolute;
+    top: 0;
+    background:transparent;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ourprofessionalContainer > h1 {
+    line-height: 50px;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .pre > span {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  .blogContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    max-width: 1170px;
+    margin: 100px auto;
+    border-radius: 10px;
+  }
+  .pre > span:last-child {
+    color: #ffb8b7;
+    cursor: pointer;
+  }
+  .singleItemContainer{
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+  .blogImageContianer{
+    width: 100%;
+    height: 400px;
+    position: relative;
+   
+    cursor: pointer;
+  }
+  .blogImageContianer > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-size: cover;
+    border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .descriptionCotinaer{
+    margin-top: 20px;
+  }
+  .descriptionCotinaer > div{
+    padding: 15px 0px;
+  }
+  .descriptionCotinaer > div > span:first-child{
+    font-style: italic;
+    margin-right: 5px;
+  }
+  .descriptionCotinaer > div > span:nth-child(2){
+    color: rgb(241, 140, 203);
+    cursor: pointer;
+  }
+  .descriptionCotinaer > h2{
+    margin-bottom: 10px;
+    color: rgb(58, 55, 55);
+    line-height: 30px;
+  }
+  .descriptionCotinaer > p{
+    line-height: 22px;
+    font-size: 16px;
+    color: #b9adac;
+  }
+
+  @media (max-width: 576px) {
+    /* Styles for mobile phones */
+  }
+  
+  /* Small Devices (Tablets) */
+  @media (max-width: 768px) {
+    /* Styles for tablets */
+ .blogContainer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+ }
+  }
+  
+  /* Medium Devices (Laptops) */
+  @media (max-width: 992px) {
+    /* Styles for laptops */
+  }
+  
+  /* Large Devices (Desktops) */
+  @media (max-width: 1200px) {
+    /* Styles for desktops */
+  }

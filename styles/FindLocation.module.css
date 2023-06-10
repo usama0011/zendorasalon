@@ -1,0 +1,74 @@
+.background {
+  position: relative;
+  height: 500px;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.backgroundIMage {
+  background-attachment: scroll;
+}
+.button {
+  background-color: black;
+  color: white;
+  padding: 1.5rem 2rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 576px) {
+  /* Styles for mobile phones */
+  .title {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+    width: 100%;
+    line-height: 30px;
+  }
+  .button {
+    padding: 1.2rem 1rem;
+    white-space: nowrap;
+  }
+}
+
+/* Small Devices (Tablets) */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem !important;
+    margin-bottom: 2rem;
+    color: white;
+    width: 100%;
+  }
+}
+
+/* Medium Devices (Laptops) */
+@media (max-width: 912px) {
+  /* Styles for laptops */
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white;
+  }
+}

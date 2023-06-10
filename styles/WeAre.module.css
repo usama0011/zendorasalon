@@ -1,0 +1,147 @@
+.outerContainer {
+  margin: 0px 20px;
+}
+.container {
+  margin: 4rem auto;
+  max-width: 1160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, rgb(93, 226, 215), #ffb8b7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlayTitle {
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.playButton {
+  z-index: 999;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.playIcon {
+  width: 80px;
+  height: 80px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.playButton:hover .playIcon {
+  transform: scale(1.2);
+}
+
+.videoOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  padding:10px;
+  justify-content: center;
+}
+.iframe {
+  max-width: 900px;
+  max-height: 550px;
+}
+.videoContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+.closeIcon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: -50px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  /* Styles for mobile phones */
+  .iframe {
+    max-width: 400px;
+    width: 280px !important;
+    height: 350px !important;
+  }
+  .imageContainer {
+    height: 500px;
+  }
+  .closeIcon {
+    position: absolute;
+    top: -50px;
+    right: 0px;
+  }
+}
+
+/* Small Devices (Tablets) */
+
+@media (max-width: 768px) {
+  .iframe {
+    max-width: 500px !important;
+    height: 100%;
+  }
+}
+
+/* Medium Devices (Laptops) */
+@media (max-width: 992px) {
+  /* Styles for laptops */
+}
+
+/* Large Devices (Desktops) */
+@media (max-width: 1020px) {
+  /* Styles for desktops */
+  .iframe {
+    max-width: 700px;
+    max-height: 450px;
+  }
+}

@@ -1,0 +1,134 @@
+.slider_container {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide_content {
+  position: relative;
+  width: 690px;
+  height: 345px;
+  padding: 10px;
+  z-index: 1;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+}
+.slideInnerContent{
+  border: 1px dotted rgb(129, 60, 60);
+  width: 100%;
+  height: 100%;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slideInnerContent > h2{
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+}
+.slideInnerContent > p{
+  padding: 30px 0px;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+}
+.slideInnerContent > button{
+  border: none;
+  outline: none;
+  padding: 20px 45px;
+  background-color: #000000;
+  color: #fff;
+  font-weight: bold;
+}
+.dots {
+  position: absolute;
+  bottom: 25px; /* Adjust the positioning as needed */
+  left: 50%; /* Adjust the positioning as needed */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.dot {
+  width: 10px; /* Adjust the size as needed */
+  height: 10px; /* Adjust the size as needed */
+  margin: 0 4px; /* Adjust the spacing as needed */
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.dot.active {
+  background-color: #000;
+}
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  /* Styles for mobile phones */
+  .slide_content{
+    width: fit-content !important;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .slideInnerContent > h2{
+    font-size: 25px;
+  }
+  .slideInnerContent > p{
+    font-size: 14px;
+  }
+  .slideInnerContent > button{
+    padding: 10px 20px;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (max-width: 768px) {
+  .slide_content{
+    width: 500px;
+    height: auto;
+  }
+  /* Styles for tablets */
+}
+@media (min-width: 768px) {
+}
+
+/* Medium Devices (Laptops) */
+@media (max-width: 992px) {
+  /* Styles for laptops */
+}
+
+/* Large Devices (Desktops) */
+@media (max-width: 1020px) {
+  /* Styles for desktops */
+}

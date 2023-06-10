@@ -1,0 +1,265 @@
+.upperContainer {
+  width: 100%;
+  height: 186px;
+  position: relative;
+}
+.bgImageContainer{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bgImageContainer > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+.ourprofessionalContainer {
+  position: absolute;
+  top: 0;
+  background:transparent;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ourprofessionalContainer > h1 {
+  line-height: 50px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.pre > span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.pre > span:last-child {
+  color: #ffb8b7;
+  cursor: pointer;
+}
+.bottomcontainer {
+  max-width: 1170px;
+  width: 100%;
+  margin: auto;
+}
+.textContainer {
+  margin: 50px 0px;
+}
+.text {
+  color: #888888;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.firstDiv,
+.secondDiv {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.firstDiv > label {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 18px;
+}
+.secondDiv > label {
+  margin-bottom: 10px;
+  color: #000000;
+  font-size: 18px;
+}
+.firstDiv > input {
+  width: 262px;
+  height: 49px;
+  outline: none;
+  padding: 0px 10px;
+  color: #111111;
+  border: 1px solid gainsboro;
+}
+.secondDiv > select {
+  width: 262px;
+  height: 49px;
+  outline: none;
+  padding: 0px 10px;
+  color: #111111;
+  border: 1px solid gainsboro;
+}
+.bookingContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
+  width: 100%;
+  margin-bottom: 70px;
+}
+.imageContainer {
+  max-width: 500px;
+  height: 714px;
+  width: 100%;
+  position: relative;
+}
+.myImage {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.pName {
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 40px;
+}
+.pName > p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.pName > span {
+  color: #888888;
+}
+.pName > span:hover {
+  color: #ffb8b7;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.descContainer {
+  padding: 50px 0px;
+  color: #8f8f8f;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border-bottom: 1px solid gainsboro;
+}
+.form {
+  padding: 30px 0px;
+  width: 100%;
+}
+.form > h3 {
+  padding-bottom: 20px;
+}
+.inputItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+.inputItem > input {
+  width: 100%;
+  height: 45px;
+  padding: 0px 15px;
+  outline: none;
+  border: 1px solid gainsboro;
+  color: #111111;
+}
+.chooseContainer {
+  width: 100%;
+}
+.chooseContainer > select {
+  width: 100%;
+  height: 45px;
+  padding: 0px 10px;
+  border: 1px solid gainsboro;
+}
+.submitButton {
+  margin-top: 30px;
+  padding: 15px 50px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #000000;
+  color: white;
+}
+/* Extra Small Devices (Mobile Phones) */
+@media (max-width: 576px) {
+  /* Styles for mobile phones */
+  .imageContainer {
+    width: 100%;
+    height: 350px;
+  }
+  .bookingContainer {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+    margin-bottom: 70px;
+  }
+  .ourprofessionalContainer > h1 {
+    line-height: 50px;
+    font-size: 30px;
+  }
+  .pre > span {
+    font-size: 16px;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (max-width: 768px) {
+  /* Styles for tablets */
+  .searchContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .firstDiv {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .firstDiv > input {
+    width: 100%;
+  }
+  .secondDiv {
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 20px;
+  }
+  .secondDiv > select {
+    width: 100%;
+  }
+  .form {
+    width: 100%;
+  }
+  .inputItem {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputItem > input {
+    width: 100%;
+  }
+  .chooseContainer {
+    width: 100%;
+  }
+  .chooseContainer > select {
+    width: 100%;
+  }
+}
+
+/* Medium Devices (Laptops) */
+@media (max-width: 992px) {
+  /* Styles for laptops */
+}
+
+/* Large Devices (Desktops) */
+@media (max-width: 1200px) {
+  /* Styles for desktops */
+  .imageContainer {
+    max-width: 90%;
+    position: relative;
+    width: 100%;
+    margin: 0px auto;
+  }
+  .searchContainer {
+    justify-content: center;
+  }
+  .bottomcontainer {
+    padding: 20px 20px;
+  }
+}
