@@ -17,6 +17,7 @@
     "eslint": "8.39.0",
     "eslint-config-next": "13.4.0",
     "google-map-react": "^2.2.1",
+    "libvips": "^0.0.2",
     "moment": "^2.29.4",
     "mongoose": "^7.2.1",
     "next": "13.4.0",
