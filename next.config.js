@@ -2,8 +2,9 @@
 
 const nextConfig = {
   reactStrictMode: true,
-  images:{
-    domains:['res.cloudinary.com']
+
+  images: {
+    domains: ["res.cloudinary.com"],
   },
   env: {
     MONGODB_URI:

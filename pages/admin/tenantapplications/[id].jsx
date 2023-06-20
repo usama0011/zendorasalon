@@ -153,4 +153,6 @@ export async function getServerSideProps({ query, req }) {
     }
 }
 
+
+
 export default ApplicationDetails;
